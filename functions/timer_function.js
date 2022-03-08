@@ -1,7 +1,8 @@
 let seconds = 00;
 let tens = 00;
-let appendTens = document.getElementById("tens");
+let minutes = 00;
 let appendSeconds = document.getElementById("seconds");
+let appendMinutes = document.getElementById("minutes");
 let buttonStart = document.getElementById("button-start");
 let buttonStop = document.getElementById("button-stop");
 let buttonReset = document.getElementById("button-reset");
@@ -14,19 +15,28 @@ function startTimer(){
     tens++;
 
     if(tens<9){
-        appendTens.innerHTML = "0" + tens;
+        appendTens = "0" + tens;
     }
     if(tens>9){
-        appendTens.innerHTML = tens;
+        appendTens = tens;
     }
     if(tens>99) {
         seconds++;
         appendSeconds.innerHTML = "0" + seconds;
         tens = 0;
-        appendTens.innerHTML = "0" + 0;
+        appendTens = "0" + 0;
     }
     if(seconds>9) {
         appendSeconds.innerHTML = seconds;
+    }
+    if(seconds>59) {
+        minutes++;
+        appendMinutes.innerHTML = "0" + minutes;
+        seconds = 0;
+        appendSeconds.innerHTML = "0" + 0;
+    }
+    if (minutes>9) {
+        appendMinutes.innerHTML = minutes;
     }
 }
 
@@ -38,7 +48,6 @@ buttonStart.onclick = function() {
 // when clicked on stop
 buttonStop.onclick = function() {
     clearInterval(interval);
-    console.log(interval)
 };
 
 // when clicked on reset
@@ -46,8 +55,8 @@ buttonReset.onclick = function() {
     clearInterval(interval);
     tens = "00";
     seconds = "00"
+    minutes = "00"
     appendSeconds.innerHTML = seconds;
-    appendTens.innerHTML = tens;  
+    appendTens = tens;  
+    appendMinutes.innerHTML = minutes;
 }
-
-// store value on page
