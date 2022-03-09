@@ -7,7 +7,8 @@ const tileStyle = {
     borderRadius: '50%',
     display: 'flex',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    gridColumn: '1 / span 2'
 }
 
 const iconStyle={
@@ -16,9 +17,9 @@ const iconStyle={
 }
 
 const gridStyle={
-    display: 'grid', 
-    justifyContent: 'center'
-    
+    display: 'flex', 
+    justifyContent: 'center',
+    flexWrap: 'wrap'
 }
 
 const grid = [];
