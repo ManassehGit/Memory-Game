@@ -1,8 +1,13 @@
+import GameSpace from "./components/GameSpace";
+import Heading from "./components/Heading";
+import GameDetails from "./components/GameDetails";
 
 function App() {
   return (
     <div className="App">
-      <h1>Memory-Game</h1>
+      <Heading />
+      <GameSpace />
+      <GameDetails />
     </div>
   );
 }
