@@ -1,8 +1,10 @@
 import React from 'react'
 
-const attribName = "Player";
-const attribValue = "4";
-const InfoBox = () => {
+
+const InfoBox = (props) => {
+    const attribName = props.infoName;
+    const attribValue = props.infoValue;
+
   return (
     <div className='infobox'>
         <span className='light-blue-text smaller-font'>{attribName}</span>
@@ -11,4 +13,4 @@ const InfoBox = () => {
   )
 }
 
-export default InfoBox
+export default InfoBox;
