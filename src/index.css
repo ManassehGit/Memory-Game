@@ -71,6 +71,8 @@ code {
   color: white;
 }
 
+.blue-text {}
+
 .App {
   justify-content: center;
 }
@@ -86,6 +88,7 @@ code {
   height: 80px;
   border-radius: 50%;
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
@@ -98,10 +101,11 @@ code {
 .gridStyle {
   display: grid;
   width: 30%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
   grid-gap: 10px;
   justify-items: center;
-  margin: 5px auto;
+  margin: 50px auto;
+  justify-content: space-around;
 }
 
 /* grid css */
@@ -112,10 +116,22 @@ div .blue-04:hover {
 /* infobox */
 div .infobox {
   background-color: #DFE7EC;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 150px;
+  margin: 5px 10px;
+  border-radius: 5px;
 }
 
 
 div .infobox span {
   display: inline-block;
+  padding: 15px 10px;
+}
+
+/* game details */
+.game-details {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
 }

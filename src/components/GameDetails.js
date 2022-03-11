@@ -3,10 +3,11 @@ import InfoBox from './InfoBox';
 
 const GameDetails = () => {
   return (
-    <div>
-        <p>
-            <InfoBox />
-        </p>
+    <div className='game-details'>
+      <InfoBox />
+      <InfoBox />
+      <InfoBox />
+      <InfoBox />
     </div>
   )
 }
