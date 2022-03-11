@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ResetButton from './ResetButton'
+import RestartButton from './RestartButton'
 import NewGameButton from './NewGameButton'
 
 const TopButtons = props => {
   return (
     <div>
-        <ResetButton />
+        <RestartButton />
         <NewGameButton />
     </div>
   )

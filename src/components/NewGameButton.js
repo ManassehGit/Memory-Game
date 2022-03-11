@@ -2,7 +2,7 @@ import React from 'react'
 
 const NewGameButton = () => {
   return (
-    <button>New Game</button>
+    <div className='button gray-02'>New Game</div>
   )
 }
 
