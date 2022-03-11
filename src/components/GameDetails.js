@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import InfoBox from './InfoBox';
 
 const GameDetails = () => {
   return (
     <div>
         <p>
-            The list of all the game updates
+            <InfoBox />
         </p>
     </div>
   )

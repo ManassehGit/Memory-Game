@@ -108,3 +108,14 @@ code {
 div .blue-04:hover {
   background-color: #6395B8;
 }
+
+/* infobox */
+div .infobox {
+  background-color: #DFE7EC;
+  display: inline-block;
+}
+
+
+div .infobox span {
+  display: inline-block;
+}
