@@ -82,8 +82,8 @@ code {
 }
 
 .tileStyle {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -91,12 +91,20 @@ code {
 }
 
 .iconStyle {
-  font-size: 3em;
+  font-size: 2.5rem;
   color: white;
 }
 
 .gridStyle {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  width: 30%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  justify-items: center;
+  margin: 5px auto;
+}
+
+/* grid css */
+div .blue-04:hover {
+  background-color: #6395B8;
 }

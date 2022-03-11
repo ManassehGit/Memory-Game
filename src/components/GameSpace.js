@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const grid = [];
-for(let i=1; i<=36; i++){
+for(let i=1; i<=16; i++){
     grid.push(i);
 }
 
 const GameSpace = props => {
-    const tile = <div class="blue-04 tileStyle"><i className="iconStyle" class="fa-solid fa-cube"></i></div>;
-    const content = grid.map(item => <a href="logo.svg">{tile}</a>);
+    const tile = <div className="blue-04 tileStyle"><i className="fa-solid fa-cube iconStyle"></i></div>;
+    const content = grid.map(item => tile);
   return (
     <div className="gridStyle">
         {content}
