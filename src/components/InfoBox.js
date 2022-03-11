@@ -5,8 +5,8 @@ const attribValue = "4";
 const InfoBox = () => {
   return (
     <div className='infobox'>
-        <span>{attribName}</span>
-        <span>{attribValue}</span>
+        <span className='light-blue-text smaller-font'>{attribName}</span>
+        <span className='deep-blue-text larger-font'>{attribValue}</span>
     </div>
   )
 }

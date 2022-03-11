@@ -71,7 +71,13 @@ code {
   color: white;
 }
 
-.blue-text {}
+.deep-blue-text {
+  color: #152938;
+}
+
+.light-blue-text {
+  color: #7191A5;
+}
 
 .App {
   justify-content: center;
@@ -125,8 +131,9 @@ div .infobox {
 
 
 div .infobox span {
-  display: inline-block;
-  padding: 15px 10px;
+  display: inline-flex;
+  padding: 10px 10px;
+  align-items: center;
 }
 
 /* game details */
@@ -134,4 +141,12 @@ div .infobox span {
   display: flex;
   justify-content: center;
   margin: 50px auto;
+}
+
+.smaller-font {
+  font-size: 12px;
+}
+
+.larger-font {
+  font-size: 35px;
 }
