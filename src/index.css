@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.orange {
+  background-color: #FDA214;
+}
+
+.blue-01 {
+  background-color: #BCCED9;
+}
+
+.blue-02 {
+  background-color: #7191A5;
+}
+
+.blue-03 {
+  background-color: #6395B8;
+}
+
+.blue-04 {
+  background-color: #304859;
+}
+
+.blue-05 {
+  background-color: #152938;
+}
+
+.gray-01 {
+  background-color: #FCFCFC;
+}
+
+.gray-02 {
+  background-color: #F2F2F2;
+}
