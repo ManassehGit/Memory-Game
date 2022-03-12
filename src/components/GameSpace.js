@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const choice = 4;
 //If isNumbers is false then user selected icons
-let isNumbers = true;
+let isNumbers = false;
 
 let gameNumberFontSize = choice === 4 ? '56px' : '44px';
 
