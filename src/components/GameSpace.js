@@ -1,5 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import icons from '../GameItems';
 
 const choice = 4;
 //If isNumbers is false then user selected icons
@@ -20,7 +21,7 @@ for(let i=1; i<=choice**2; i++){
 }
 
 const GameSpace = props => {
-    const tile = isNumbers ? <div className="blue-04 tileStyle"><div className='white-text' style={gameNumberStyle}>5</div></div> : <div className="blue-04 tileStyle"><i className="fa-solid fa-cube iconStyle"></i></div>;
+    const tile = isNumbers ? <div className="blue-04 tileStyle"><div className='white-text' style={gameNumberStyle}>5</div></div> : <div className="blue-04 tileStyle"><FontAwesomeIcon className='iconStyle' icon={icons[2]}/></div>;
     const content = grid.map(item => tile);
   return (
     <div className="gridStyle" style={columnStyle}>
@@ -29,6 +30,5 @@ const GameSpace = props => {
   )
 }
 
-GameSpace.propTypes = {}
 
 export default GameSpace
