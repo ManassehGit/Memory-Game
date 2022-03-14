@@ -59,4 +59,45 @@ const GameInfoContainer = (props) => {
         const playerToWin = gameInfoElements.filter(
           (gameInfoElement) => gameInfoElement.props.isWinner
         );
+        
+        if (playerToWin.length > 1) gameEndTitle.current = "It's a tie!";
+        else gameEndTitle.current = `${playerToWin[0].props.children} Wins!`;
+
+        gameEndSubtitle.current = 'Game over! Here are the results';
+      }
+    }
+
+    return gameInfoElements;
+  }, [
+    activePlayerIndex,
+    moves,
+    numOfPlayers,
+    pairs,
+    props.gameEnd,
+    minutesElapsed,
+    secondsElapsed,
+  ]);
+
+  return (
+    <>
+      {props.gameEnd && (
+        <div>
+          <h1>{gameEndTitle.current}</h1>
+          <p>{gameEndSubtitle.current}</p>
+        </div>
+      )}
+
+      <div
+        className={`${styles['game-info-container']} ${
+          styles[`game-info-container--${props.layout}`]
+        }`}
+      >
+        {generateGameInfos}
+      </div>
+    </>
+  );
+};
+
+export default GameInfoContainer;
+
 
