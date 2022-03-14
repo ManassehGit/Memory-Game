@@ -1,7 +1,6 @@
 import React from 'react';
 import InfoBox from './InfoBox';
 import { useStopwatch } from 'react-timer-hook';
-import {useSelector} from 'react-redux';
 
 
 const GameDetails = () => {
