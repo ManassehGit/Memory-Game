@@ -32,3 +32,33 @@ const GameGrid = () => {
             dispatch(
               hideGameElementsVisibility([lastTwoMoves[0], lastTwoMoves[1]])
             );
+            dispatch(
+                disableElementsActiveState([lastTwoMoves[0], lastTwoMoves[1]])
+              );
+              dispatch(resetLastTwoMoves());
+              if (numOfPlayers > 1) dispatch(changePlayerTurn());
+            } else {
+              dispatch(
+                disableElementsActiveState([lastTwoMoves[0], lastTwoMoves[1]])
+              );
+              dispatch(resetLastTwoMoves());
+              dispatch(updatePairs());
+            }
+    
+            if (
+              gameElements.length > 0 &&
+              gameElements.every((gameElement) => gameElement.isVisible)
+            ) {
+              dispatch(setGameFinished());
+              dispatch(toggleModalGameEndVisibility());
+            }
+          }, 1000);
+        }
+    
+        return () => {
+          if (!canPlay && timeout) {
+            clearTimeout(timeout);
+          }
+        };
+      }, [gameElements, lastTwoMoves, numOfPlayers, canPlay, dispatch]);
+    
