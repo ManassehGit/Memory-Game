@@ -61,4 +61,56 @@ const GameGrid = () => {
           }
         };
       }, [gameElements, lastTwoMoves, numOfPlayers, canPlay, dispatch]);
+
+      
+  const onMoveMadeHandler = useCallback(
+    (gameElement) => {
+      if (!canPlay) return;
+      dispatch(handleClickGameElement(gameElement));
+    },
+    [dispatch, canPlay]
+  );
+
+  const generateGridElements = useMemo(() => {
+    const gridElements = [];
+
+    gameElements.forEach((gameElement, index) => {
+      gridElements.push(
+        <GameButton
+          canPlay={canPlay}
+          isVisible={gameElement.isVisible}
+          isActive={gameElement.isActive}
+          onMoveMade={onMoveMadeHandler.bind(null, {
+            value: gameElement.value,
+            index,
+          })}
+          key={index}
+        >
+          {gridTheme === GAME_THEMES.NUMBERS ? (
+            gameElement.value
+          ) : (
+            <FontAwesomeIcon icon={ICONS_ARR[gameElement.value - 1]} />
+          )}
+        </GameButton>
+      );
+    });
+
+    return gridElements;
+  }, [gameElements, gridTheme, onMoveMadeHandler, canPlay]);
+
+  return (
+    <div
+      className={`${styles['game-grid']} ${
+        styles[
+          `game-grid--${gridSize === GAME_GRID_SIZES['4x4'] ? '4x4' : '6x6'}`
+        ]
+      }`}
+    >
+      {generateGridElements}
+    </div>
+  );
+};
+
+export default GameGrid;
+
     
