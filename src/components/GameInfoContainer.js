@@ -15,3 +15,22 @@ const GameInfoContainer = (props) => {
   );
   let gameEndTitle = useRef('');
   let gameEndSubtitle = useRef('');
+  const generateGameInfos = useMemo(() => {
+    const gameInfoElements = [];
+
+    if (numOfPlayers === 1) {
+      gameInfoElements.push(
+        <GameInfo
+          key={1}
+          value={`${minutesElapsed}:${secondsElapsed
+            .toString()
+            .padStart(2, '0')}`}
+        >{`Time ${props.gameEnd ? 'Elapsed' : ''}`}</GameInfo>
+      );
+      gameInfoElements.push(
+        <GameInfo
+          key={2}
+          value={moves[activePlayerIndex]}
+          {...(props.gameEnd ? { showMovesString: true } : {})}
+        >{`Moves ${props.gameEnd ? 'Taken' : ''}`}</GameInfo>
+      );
