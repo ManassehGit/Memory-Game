@@ -14,3 +14,28 @@ const GameInfo = (props) => {
               ? `${styles['game-info__player--long']}`
               : ''
           }
+          >
+          {props.children}
+        </span>
+        {props.playerShortText && (
+          <span className={`${styles['game-info__player--short']}`}>
+            {props.playerShortText}
+          </span>
+        )}{' '}
+        {props.isWinner ? '(Winner)' : ''}
+      </p>
+
+      <h2 className={`${styles['game-info__title']}`}>
+        {props.value} {props.showMovesString ? 'Moves' : ''}{' '}
+        {props.showPairsString
+          ? (() => {
+              if (props.value > 1) return 'Pairs';
+              else return 'Pair';
+            })()
+          : ''}
+      </h2>
+    </div>
+  );
+};
+
+export default GameInfo;
