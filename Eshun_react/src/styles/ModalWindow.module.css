@@ -8,3 +8,9 @@
   flex-direction: column;
   gap: 2rem;
 }
+
+@media screen and (max-width: 500px) {
+  .modal-window {
+    padding: 2.8rem;
+  }
+}
