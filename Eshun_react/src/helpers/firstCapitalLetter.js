@@ -3,3 +3,4 @@ const firstCapitalLetter = (str) => {
 };
 
 
+export default firstCapitalLetter;
