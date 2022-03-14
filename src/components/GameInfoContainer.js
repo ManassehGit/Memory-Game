@@ -34,3 +34,29 @@ const GameInfoContainer = (props) => {
           {...(props.gameEnd ? { showMovesString: true } : {})}
         >{`Moves ${props.gameEnd ? 'Taken' : ''}`}</GameInfo>
       );
+      
+      if (props.gameEnd) {
+        gameEndTitle.current = 'You did it!';
+        gameEndSubtitle.current = "Game over! Here's how you got on";
+      }
+    } else {
+      for (let i = 0; i < numOfPlayers; i++) {
+        gameInfoElements.push(
+          <GameInfo
+            {...(!props.gameEnd ? { isActive: activePlayerIndex === i } : {})}
+            key={i}
+            {...(props.gameEnd ? { showPairsString: true } : {})}
+            value={props.gameEnd ? pairs[i] : moves[i]}
+            isWinner={props.gameEnd && pairs[i] === Math.max(...pairs)}
+            playerShortText={`P${i + 1}`}
+          >{`Player ${i + 1}`}</GameInfo>
+        );
+      }
+
+      if (props.gameEnd) {
+        gameInfoElements.sort((a, b) => b.props.value - a.props.value);
+
+        const playerToWin = gameInfoElements.filter(
+          (gameInfoElement) => gameInfoElement.props.isWinner
+        );
+
