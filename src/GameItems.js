@@ -19,7 +19,7 @@ import {
     faCodePullRequest
 } from '@fortawesome/free-solid-svg-icons';
 
-const icons = [
+export const icons = [
     faCloud,
     faAtom,
     faCoffee,
@@ -40,4 +40,3 @@ const icons = [
     faCodePullRequest
 ];
 
-export default icons;

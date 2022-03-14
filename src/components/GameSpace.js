@@ -1,22 +1,22 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import icons from '../GameItems';
+import {icons} from '../GameItems';
 
-const choice = 4;
+const gridChoice = 4;
 //If isNumbers is false then user selected icons
 let isNumbers = false;
 
-let gameNumberFontSize = choice === 4 ? '56px' : '44px';
+let gameNumberFontSize = gridChoice === 4 ? '56px' : '44px';
 
 const gameNumberStyle = {
   fontSize: `${gameNumberFontSize}`
 }
 
 const columnStyle = {
-  gridTemplateColumns: `repeat(${choice}, 1fr)`
+  gridTemplateColumns: `repeat(${gridChoice}, 1fr)`
 }
 const grid = [];
-for(let i=1; i<=choice**2; i++){
+for(let i=1; i<=gridChoice**2; i++){
     grid.push(i);
 }
 
