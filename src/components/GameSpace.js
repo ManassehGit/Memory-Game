@@ -1,41 +1,34 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import icons from '../GameItems';
 
-const tileStyle = {
-    width: '100px',
-    height: '100px',
-    borderRadius: '50%',
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gridColumn: '1 / span 2'
+const choice = 4;
+//If isNumbers is false then user selected icons
+let isNumbers = false;
+
+let gameNumberFontSize = choice === 4 ? '56px' : '44px';
+
+const gameNumberStyle = {
+  fontSize: `${gameNumberFontSize}`
 }
 
-const iconStyle={
-    fontSize: '3em',
-    color: 'white'
+const columnStyle = {
+  gridTemplateColumns: `repeat(${choice}, 1fr)`
 }
-
-const gridStyle={
-    display: 'flex', 
-    justifyContent: 'center',
-    flexWrap: 'wrap'
-}
-
 const grid = [];
-for(let i=1; i<=36; i++){
+for(let i=1; i<=choice**2; i++){
     grid.push(i);
 }
 
 const GameSpace = props => {
-    const tile = <div style={tileStyle} class="blue-04"><i style={iconStyle} class="fa-solid fa-cube"></i></div>;
+    const tile = isNumbers ? <div className="blue-04 tileStyle"><div className='white-text' style={gameNumberStyle}>5</div></div> : <div className="blue-04 tileStyle"><FontAwesomeIcon className='iconStyle' icon={icons[2]}/></div>;
+    const content = grid.map(item => tile);
   return (
-    <div style={gridStyle}>
-        {grid.map(item => tile)}
+    <div className="gridStyle" style={columnStyle}>
+        {content}
     </div>
   )
 }
 
-GameSpace.propTypes = {}
 
 export default GameSpace
