@@ -1,0 +1,10 @@
+.modal-window {
+  background-color: var(--color-snow);
+  border-radius: 2rem;
+  padding: 4rem;
+  width: min(65.4rem, 90%);
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
