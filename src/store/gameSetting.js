@@ -5,7 +5,11 @@ const gameSettingState = {
     isNumbers: true,
     gameTiles: [],
     numberOfPlayers: 1,
-    
+    isEndGame: false,
+    activePlayer: 0,
+    gridTileNumber: state.gridChoice ** 2;
+
+
     
 }
 
@@ -18,6 +22,8 @@ const gameSettingSlice = createSlice({
             state.isNumbers = action.payload.isNumbers;
             state.numberOfPlayers = action.payload.numberOfPlayers;
         },
-        generateGameElements: (state) => {}
+        generateGameElements: (state) => {
+            const gridcontent = state.gr
+        }
     }
 });

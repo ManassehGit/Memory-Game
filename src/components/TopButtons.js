@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import RestartButton from './RestartButton'
 import NewGameButton from './NewGameButton'
 
@@ -12,6 +11,5 @@ const TopButtons = props => {
   )
 }
 
-TopButtons.propTypes = {}
 
 export default TopButtons
