@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+
+:root {
+  --color-dark-tangerine: #fda214;
+  --color-light-tangerine: #ffb84a;
+  --color-spindle: #bcced9;
+  --color-arapawa: #304859;
+  --color-tangaroa: #152938;
+  --color-white-smoke: #f2f2f2;
+  --color-bermuda-grey: #7191a5;
+  --color-shakespeare: #6395b8;
+  --color-pattens-blue: #dfe7ec;
+  --color-snow: #fcfcfc;
+  --font-size-h1: 4.8rem;
+  --font-size-h2: 3.2rem;
+  --font-size-h3: 2rem;
+  --font-size-number-4x4: 4.4rem;
+  --font-size-number-6x6: 3.2rem;
+  --font-size-button: 2rem;
+  --font-size-button-big: 3rem;
+  --font-size-button-menu: 2.4rem;
+  --font-size-p: 1.8rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-size: var(--font-size-p);
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--color-bermuda-grey);
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
+}
+
+#game {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem;
+}
+
+h1 {
+  font-size: var(--font-size-h1);
+}
+
+h2 {
+  font-size: var(--font-size-h2);
+}
+
+h3 {
+  font-size: var(--font-size-h3);
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  border-radius: 6rem;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --font-size-h1: 4.4rem;
+    --font-size-h2: 3rem;
+    --font-size-h3: 1.8rem;
+    --font-size-number-4x4: 4.2rem;
+    --font-size-number-6x6: 3rem;
+    --font-size-button: 1.8rem;
+    --font-size-button-big: 2.8rem;
+    --font-size-button-menu: 2.2rem;
+  }
+
+  #game {
+    padding: 4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --font-size-h1: 3.6rem;
+    --font-size-h2: 2.4rem;
+    --font-size-h3: 1.8rem;
+    --font-size-number-4x4: 3.4rem;
+    --font-size-number-6x6: 2.4rem;
+    --font-size-button: 1.8rem;
+    --font-size-button-big: 2.4rem;
+    --font-size-button-menu: 1.8rem;
+    --font-size-p: 1.6rem;
+  }
+
+  #game {
+    padding: 4rem 2rem;
+  }
+}
