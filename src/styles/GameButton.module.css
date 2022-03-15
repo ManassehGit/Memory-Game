@@ -33,3 +33,7 @@
     transition: all 0.2s linear;
     cursor: default;
   }
+
+  .game-button__content--active {
+    background-color: var(--color-dark-tangerine);
+  }
