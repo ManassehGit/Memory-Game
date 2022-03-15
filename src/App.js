@@ -2,6 +2,9 @@ import GameGrid from './components/GameGrid';
 import Header from './components/Header';
 import Modal from './components/Modal';
 import Backdrop from './components/Backdrop';
+import Logo from './components/Logo';
+import GameSettingsMenu from './components/GameSettingsMenu';
+
 
 
 function App() {
