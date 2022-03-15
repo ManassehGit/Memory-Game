@@ -1,0 +1,23 @@
+.modal-window {
+  background-color: var(--color-snow);
+  border-radius: 2rem;
+  padding: 4rem;
+  width: min(65.4rem, 90%);
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .modal-window {
+    padding: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .modal-window {
+    padding: 2rem;
+    gap: 1rem;
+  }
+}
