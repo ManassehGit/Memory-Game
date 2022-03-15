@@ -18,3 +18,11 @@
   width: 100%;
   color: var(--color-snow);
 }
+
+.button-menu-selection {
+    background-color: var(--color-spindle);
+  }
+  
+  .button-menu-selection:hover {
+    background-color: var(--color-shakespeare);
+  }
