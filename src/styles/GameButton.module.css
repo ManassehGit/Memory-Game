@@ -1,0 +1,6 @@
+.game-button {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    color: var(--color-snow);
+  }
