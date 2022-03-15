@@ -25,3 +25,11 @@
     transform: scale(0);
   }
   
+  .game-button__content {
+    color: inherit;
+    background-color: var(--color-spindle);
+    display: grid;
+    place-items: center;
+    transition: all 0.2s linear;
+    cursor: default;
+  }
