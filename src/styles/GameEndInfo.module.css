@@ -4,3 +4,7 @@
     gap: 4rem;
   text-align: center;
 }
+.game-end-info h1 {
+    color: var(--color-tangaroa);
+    margin-bottom: 2rem;
+  }
