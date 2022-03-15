@@ -35,8 +35,8 @@ const StartNewGameButton = () => {
 
   return (
     <>
-        <Button>
-
+        <Button onClick={startNewGameHandler} type={props.type}>
+            {props.children}
         </Button>
     </>
   )
