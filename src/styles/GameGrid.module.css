@@ -21,3 +21,13 @@
     height: 57.2rem;
     font-size: var(--font-size-number-6x6);
   }
+
+  
+@media screen and (max-width: 768px) {
+    .game-grid--4x4,
+    .game-grid--6x6 {
+      width: 80vw;
+      height: 80vw;
+      gap: 1.6rem;
+    }
+  }
