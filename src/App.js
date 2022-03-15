@@ -8,6 +8,7 @@ import ModalWindow from './components/ModalWindow';
 import GameInfoContainer from './components/GameInfoContainer';
 import GameEndInfo from './components/GameEndInfo';
 import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 
 
