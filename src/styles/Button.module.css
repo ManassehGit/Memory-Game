@@ -26,3 +26,13 @@
   .button-menu-selection:hover {
     background-color: var(--color-shakespeare);
   }
+
+  .button-menu-selection--active {
+    background-color: var(--color-arapawa);
+  }
+  
+  .button-primary,
+  .button-secondary {
+    font-size: var(--font-size-button-menu);
+  }
+  
