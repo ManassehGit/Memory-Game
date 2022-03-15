@@ -16,3 +16,10 @@
   .game-info-container--vertical > * {
     flex: 1 1 100%;
   }
+
+  
+.game-info-container--horizontal > * {
+    flex: 1 1 25%;
+    max-width: 30rem;
+  }
+  
