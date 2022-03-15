@@ -32,3 +32,28 @@
     border: 1.4rem solid transparent;
     border-bottom-color: var(--color-dark-tangerine);
   }
+
+  
+.game-info--active::after {
+    content: 'current turn';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 2rem;
+    width: 100%;
+    transform: translateY(100%);
+    color: var(--color-tangaroa);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    font-size: 1.3rem;
+  }
+  
+  .game-info--winner {
+    background-color: var(--color-arapawa);
+    color: var(--color-snow);
+  }
+  
+  .game-info__player--short {
+    display: none;
+  }
