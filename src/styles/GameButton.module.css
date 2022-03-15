@@ -37,3 +37,9 @@
   .game-button__content--active {
     background-color: var(--color-dark-tangerine);
   }
+
+  @media (hover: hover) {
+    .game-button__cover:hover {
+      background-color: var(--color-shakespeare);
+    }
+  }
