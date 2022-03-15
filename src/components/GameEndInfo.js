@@ -8,3 +8,26 @@ import {
   toggleModalMenuSettigsVisibility,
 } from '../store/modalsSlice';
 import { useDispatch } from 'react-redux';
+const GameEndInfo = () => {
+    const dispatch = useDispatch();
+  
+    const startNewGameHandler = () => {
+      dispatch(toggleModalGameEndVisibility());
+      dispatch(toggleModalMenuSettigsVisibility());
+    };
+
+    return (
+        <div className={styles['game-end-info']}>
+          <GameInfoContainer layout='vertical' gameEnd />
+          <div className={styles['game-end-info__buttons']}>
+            <RestartGameButton type='primary'>Restart</RestartGameButton>
+            <StartNewGameButton
+              onStartNewGame={startNewGameHandler}
+              type='secondary'
+            >
+              Setup New Game
+            </StartNewGameButton>
+          </div>
+        </div>
+      );
+    };
