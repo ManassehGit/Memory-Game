@@ -1,4 +1,6 @@
 .game-end-info {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
+  text-align: center;
 }
