@@ -4,6 +4,8 @@ import {
   toggleModalGameEndVisibility,
   toggleModalMenuVisibility,
 } from '../store/modalsSlice';
+import { startNewGame } from '../store/gameSlice';
+
 
 const RestartGameButton = () => {
     const dispatch = useDispatch();
@@ -13,7 +15,14 @@ const RestartGameButton = () => {
   const isModalMenuVisible = useSelector(
     (state) => state.modals.isModalMenuVisible
   );
-  
+
+  const gameRestartHandler = () => {
+    if (isModalGameEndVisible) dispatch(toggleModalGameEndVisibility());
+    if (isModalMenuVisible) dispatch(toggleModalMenuVisibility());
+
+    dispatch(startNewGame());
+  };
+
   return (
     <>
         <Button>
