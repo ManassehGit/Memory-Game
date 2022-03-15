@@ -1,0 +1,9 @@
+.game-info-container {
+    display: flex;
+    gap: 3rem;
+    width: 100%;
+  }
+  
+  .game-info-container--vertical {
+    flex-direction: column;
+  }
