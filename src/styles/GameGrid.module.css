@@ -12,3 +12,12 @@
     height: 53.2rem;
     font-size: var(--font-size-number-4x4);
   }
+
+  .game-grid--6x6 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1.6rem;
+    width: 57.2rem;
+    height: 57.2rem;
+    font-size: var(--font-size-number-6x6);
+  }
