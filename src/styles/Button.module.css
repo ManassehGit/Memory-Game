@@ -36,3 +36,11 @@
     font-size: var(--font-size-button-menu);
   }
   
+  .button-primary {
+    color: var(--color-snow);
+    background-color: var(--color-dark-tangerine);
+  }
+  
+  .button-primary:hover {
+    background-color: var(--color-light-tangerine);
+  }
