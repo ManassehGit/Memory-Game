@@ -43,4 +43,12 @@
       width: 90vw;
       height: 90vw;
     }
-  
+    .game-grid--4x4 {
+        gap: 1rem;
+      }
+    
+      .game-grid--6x6 {
+        gap: 0.6rem;
+      }
+    }
+    
