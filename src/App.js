@@ -10,6 +10,7 @@ import GameEndInfo from './components/GameEndInfo';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { generateGameElements, updateTimer } from './store/gameSlice';
+import RestartGameButton from './components/RestartGameButton';
 
 
 
