@@ -1,0 +1,13 @@
+.game-info {
+    background-color: var(--color-pattens-blue);
+    border-radius: 1rem;
+    padding: 1.4rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+  }
+  
+  .game-info__title {
+    color: var(--color-arapawa);
+  }
