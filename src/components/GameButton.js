@@ -21,3 +21,5 @@ const GameButton = (props) => {
     </div>
   );
 };
+
+export default GameButton;
