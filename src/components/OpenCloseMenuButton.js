@@ -4,6 +4,12 @@ import { useDispatch } from 'react-redux';
 
 
 const OpenCloseMenuButton = () => {
+
+  const dispatch = useDispatch();
+  const openMenuModalHandler = () => {
+    dispatch(toggleModalMenuVisibility());
+  };
+  
   return (
     <>
       <Button>
