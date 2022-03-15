@@ -1,3 +1,10 @@
 .button {
     padding: 1rem 2.6rem;
   }
+
+  .button-menu-start {
+    color: var(--color-snow);
+    background-color: var(--color-dark-tangerine);
+    font-size: var(--font-size-button-big);
+    width: 100%;
+  }
