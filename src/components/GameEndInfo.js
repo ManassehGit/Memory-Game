@@ -31,3 +31,5 @@ const GameEndInfo = () => {
         </div>
       );
     };
+
+    export default GameEndInfo;
