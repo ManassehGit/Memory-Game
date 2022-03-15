@@ -6,6 +6,14 @@ import {
 } from '../store/modalsSlice';
 
 const RestartGameButton = () => {
+    const dispatch = useDispatch();
+  const isModalGameEndVisible = useSelector(
+    (state) => state.modals.isModalGameEndVisible
+  );
+  const isModalMenuVisible = useSelector(
+    (state) => state.modals.isModalMenuVisible
+  );
+  
   return (
     <>
         <Button>
