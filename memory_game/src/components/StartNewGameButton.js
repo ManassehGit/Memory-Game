@@ -7,9 +7,8 @@ import {
 } from '../store/modalsSlice';
 import { setGameSettings, startNewGame } from '../store/gameSlice';
 
-
-const StartNewGameButton = () => {
-    const dispatch = useDispatch();
+const StartNewGameButton = (props) => {
+  const dispatch = useDispatch();
   const isModalGameEndVisible = useSelector(
     (state) => state.modals.isModalGameEndVisible
   );
@@ -32,14 +31,13 @@ const StartNewGameButton = () => {
     dispatch(toggleModalMenuSettigsVisibility());
   };
 
-
   return (
     <>
-        <Button onClick={startNewGameHandler} type={props.type}>
-            {props.children}
-        </Button>
+      <Button onClick={startNewGameHandler} type={props.type}>
+        {props.children}
+      </Button>
     </>
-  )
-}
+  );
+};
 
-export default StartNewGameButton
+export default StartNewGameButton;
