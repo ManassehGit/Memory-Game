@@ -5,6 +5,8 @@ import Backdrop from './components/Backdrop';
 import Logo from './components/Logo';
 import GameSettingsMenu from './components/GameSettingsMenu';
 import ModalWindow from './components/ModalWindow';
+import GameInfoContainer from './components/GameInfoContainer';
+
 
 
 
