@@ -89,3 +89,14 @@
         display: inline-block;
       }
     
+  .game-info--winner .game-info__player--short,
+  .game-info--winner ~ * .game-info__player--short {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .game-info {
+    align-items: center;
+  }
+}
