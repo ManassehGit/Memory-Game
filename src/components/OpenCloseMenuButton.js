@@ -3,16 +3,20 @@ import { toggleModalMenuVisibility } from '../store/modalsSlice';
 import { useDispatch } from 'react-redux';
 
 
-const OpenCloseMenuButton = () => {
+const OpenCloseMenuButton = (props) => {
 
   const dispatch = useDispatch();
   const openMenuModalHandler = () => {
     dispatch(toggleModalMenuVisibility());
   };
-  
+
   return (
     <>
-      <Button>
+      <Button
+        onClick={openMenuModalHandler}
+        type={props.type}
+        showOnlyOn={'mobile'}
+      >
         {props.children}
       </Button>
     </>
