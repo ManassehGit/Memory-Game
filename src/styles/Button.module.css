@@ -11,3 +11,10 @@
   .button-menu-start:hover {
     background-color: var(--color-light-tangerine);
   }
+
+  .button-menu-selection,
+.button-menu-selection--active {
+  font-size: var(--font-size-button-menu);
+  width: 100%;
+  color: var(--color-snow);
+}
