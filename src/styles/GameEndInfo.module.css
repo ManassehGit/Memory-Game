@@ -1,0 +1,4 @@
+.game-end-info {
+    display: flex;
+    flex-direction: column;
+}
