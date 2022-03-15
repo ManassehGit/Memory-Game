@@ -44,3 +44,13 @@
   .button-primary:hover {
     background-color: var(--color-light-tangerine);
   }
+
+  .button-secondary {
+    color: var(--color-arapawa);
+    background-color: var(--color-pattens-blue);
+  }
+  
+  .button-secondary:hover {
+    color: var(--color-snow);
+    background-color: var(--color-shakespeare);
+  }
