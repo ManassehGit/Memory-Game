@@ -11,3 +11,12 @@
   height: 100%;
   border-radius: 50%;
 }
+
+.game-button__cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--color-arapawa);
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
