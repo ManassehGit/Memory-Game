@@ -25,8 +25,8 @@ const RestartGameButton = () => {
 
   return (
     <>
-        <Button>
-            
+        <Button onClick={gameRestartHandler} type={props.type}>
+            {props.children}
         </Button>
     </>
     )
