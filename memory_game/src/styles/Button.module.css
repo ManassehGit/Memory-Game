@@ -1,0 +1,71 @@
+.button {
+    padding: 1rem 2.6rem;
+  }
+
+  .button-menu-start {
+    color: var(--color-snow);
+    background-color: var(--color-dark-tangerine);
+    font-size: var(--font-size-button-big);
+    width: 100%;
+  }
+  .button-menu-start:hover {
+    background-color: var(--color-light-tangerine);
+  }
+
+  .button-menu-selection,
+.button-menu-selection--active {
+  font-size: var(--font-size-button-menu);
+  width: 100%;
+  color: var(--color-snow);
+}
+
+.button-menu-selection {
+    background-color: var(--color-spindle);
+  }
+  
+  .button-menu-selection:hover {
+    background-color: var(--color-shakespeare);
+  }
+
+  .button-menu-selection--active {
+    background-color: var(--color-arapawa);
+  }
+  
+  .button-primary,
+  .button-secondary {
+    font-size: var(--font-size-button-menu);
+  }
+  
+  .button-primary {
+    color: var(--color-snow);
+    background-color: var(--color-dark-tangerine);
+  }
+  
+  .button-primary:hover {
+    background-color: var(--color-light-tangerine);
+  }
+
+  .button-secondary {
+    color: var(--color-arapawa);
+    background-color: var(--color-pattens-blue);
+  }
+  
+  .button-secondary:hover {
+    color: var(--color-snow);
+    background-color: var(--color-shakespeare);
+  }
+
+  .button-mobile {
+    display: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .button-mobile {
+      display: block;
+    }
+  
+    .button-mobile ~ * {
+      display: none;
+    }
+  }
+  
