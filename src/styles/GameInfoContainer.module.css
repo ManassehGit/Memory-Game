@@ -7,3 +7,12 @@
   .game-info-container--vertical {
     flex-direction: column;
   }
+
+  .game-info-container--horizontal {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .game-info-container--vertical > * {
+    flex: 1 1 100%;
+  }
