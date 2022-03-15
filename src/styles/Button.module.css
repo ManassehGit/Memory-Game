@@ -8,3 +8,6 @@
     font-size: var(--font-size-button-big);
     width: 100%;
   }
+  .button-menu-start:hover {
+    background-color: var(--color-light-tangerine);
+  }
