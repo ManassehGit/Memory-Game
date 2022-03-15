@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+*{
+    font-family: Atkinson Hyperlegible;
+}
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #152938;
+    margin-top: 2px;
+}
+h4{
+    text-align: center;
+    font-size: 20px;
+}
+body{
+    background-color: #979797;
+}
+.player, .player1, .player2, .player3, .player4{
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #152938;
+    border-radius: 10px;
+    color:#FCFCFC ;
+    height: 72px;
+}
+.section{
+    margin: 30px;
+}
+p{
+    margin: 10px;
+    padding: 10px;
+}
+.pairs{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+   font-weight: bold;
+   font-size: 25px;
+}
+.pairs1,.pairs2,.pairs3{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    color: #304859;
+    font-weight:bold;
+    font-size: 25px;
+}
+.pairs3{
+    margin-right: 20px;
+}
+.player1,.player2,.player3,.player4{
+    background-color:#DFE7EC;
+    color:#7191A5 ;
+}
+.container{
+    background-color: #FCFCFC;
+    border-radius: 20px ;
+    color:#7191A5 ;
+    width: 50%;
+    height: 550px;
+    margin: auto; 
+}
+.section{
+    margin: 20px;
+    padding: 10px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.restart, .new{
+    background-color:#FDA214;
+    border-radius: 40px;
+    color: #FCFCFC;
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    margin: 15px;
+    font-size: 20px;
+    font-weight:bold ;
+    border: #FDA214;
+
+}
+.new{
+    background-color: #DFE7EC;
+    border: #DFE7EC;
+    color:#304859 ;
+}
