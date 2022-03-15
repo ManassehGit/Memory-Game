@@ -19,7 +19,20 @@ const StartNewGameButton = () => {
   const isModalMenuVisible = useSelector(
     (state) => state.modals.isModalMenuVisible
   );
-  
+
+  const startNewGameHandler = () => {
+    if (isModalGameEndVisible) dispatch(toggleModalGameEndVisibility());
+    if (isModalMenuVisible) dispatch(toggleModalMenuVisibility());
+
+    if (isModalMenuSettingsVisible) {
+      dispatch(setGameSettings(props.settingsChoice));
+      dispatch(startNewGame());
+    }
+
+    dispatch(toggleModalMenuSettigsVisibility());
+  };
+
+
   return (
     <>
         <Button>
