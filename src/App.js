@@ -1,18 +1,5 @@
 import GameGrid from './components/GameGrid';
-import Header from './components/Header';
-import Modal from './components/Modal';
-import Backdrop from './components/Backdrop';
-import Logo from './components/Logo';
-import GameSettingsMenu from './components/GameSettingsMenu';
-import ModalWindow from './components/ModalWindow';
-import GameInfoContainer from './components/GameInfoContainer';
-import GameEndInfo from './components/GameEndInfo';
-import { useSelector, useDispatch } from 'react-redux';
-import { useEffect } from 'react';
-import { generateGameElements, updateTimer } from './store/gameSlice';
-import RestartGameButton from './components/RestartGameButton';
-import StartNewGameButton from './components/StartNewGameButton';
-import OpenCloseMenuButton from './components/OpenCloseMenuButton';
+
 
 function App() {
   const isModalMenuSettingsVisible = useSelector(
