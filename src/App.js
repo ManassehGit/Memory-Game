@@ -1,5 +1,7 @@
 import GameGrid from './components/GameGrid';
 import Header from './components/Header';
+import Modal from './components/Modal';
+
 
 
 
