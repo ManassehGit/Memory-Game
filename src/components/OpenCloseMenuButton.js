@@ -1,11 +1,10 @@
-import React from 'react';
-import { toggleModalMenuVisibility } from '../store/modalsSlice';
+import Button from './Button';
 import { useDispatch } from 'react-redux';
-
+import { toggleModalMenuVisibility } from '../store/modalsSlice';
 
 const OpenCloseMenuButton = (props) => {
-
   const dispatch = useDispatch();
+
   const openMenuModalHandler = () => {
     dispatch(toggleModalMenuVisibility());
   };
