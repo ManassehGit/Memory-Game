@@ -1,14 +1,13 @@
 import Button from './Button';
 import { useDispatch, useSelector } from 'react-redux';
+import { startNewGame } from '../store/gameSlice';
 import {
   toggleModalGameEndVisibility,
   toggleModalMenuVisibility,
 } from '../store/modalsSlice';
-import { startNewGame } from '../store/gameSlice';
 
-
-const RestartGameButton = () => {
-    const dispatch = useDispatch();
+const RestartGameButton = (props) => {
+  const dispatch = useDispatch();
   const isModalGameEndVisible = useSelector(
     (state) => state.modals.isModalGameEndVisible
   );
@@ -25,11 +24,11 @@ const RestartGameButton = () => {
 
   return (
     <>
-        <Button onClick={gameRestartHandler} type={props.type}>
-            {props.children}
-        </Button>
+      <Button onClick={gameRestartHandler} type={props.type}>
+        {props.children}
+      </Button>
     </>
-    )
-}
+  );
+};
 
 export default RestartGameButton;
